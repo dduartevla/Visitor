@@ -5,11 +5,21 @@ public class Feijao {
     private String dataPlantio;
     private double areaCultivada;
     private String intervencaoSugerida;
+    private boolean emTratamento;
 
     public Feijao(String dataPlantio, double areaCultivada, String intervencaoSugerida){
         this.dataPlantio = dataPlantio;
         this.areaCultivada = areaCultivada;
         this.intervencaoSugerida = intervencaoSugerida;
+        this.emTratamento = false;
+    }
+
+    public boolean isEmTratamento() {
+        return emTratamento;
+    }
+
+    public void setEmTratamento(boolean emTratamento) {
+        this.emTratamento = emTratamento;
     }
 
     public String getDataPlantio() {
