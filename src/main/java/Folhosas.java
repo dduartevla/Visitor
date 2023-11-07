@@ -1,4 +1,4 @@
-public class Folhosas {
+public class Folhosas implements Cultura{
 
     private String dataPlantio;
     private double areaCultivada;
@@ -55,6 +55,6 @@ public class Folhosas {
     }
 
     public String aceitar(Visitor visitor) {
-        return visitor.exibirFolhosas(this);
+        return visitor.visitarFolhosas(this);
     }
 }

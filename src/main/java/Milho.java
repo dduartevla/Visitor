@@ -1,4 +1,4 @@
-public class Milho {
+public class Milho implements Cultura{
 
     private String dataPlantio;
     private double areaCultivada;
@@ -45,6 +45,6 @@ public class Milho {
     }
 
     public String aceitar(Visitor visitor) {
-        return visitor.exibirMilho(this);
+        return visitor.visitarMilho(this);
     }
 }

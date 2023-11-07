@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class Feijao {
+public class Feijao implements Cultura{
 
     private String dataPlantio;
     private double areaCultivada;
@@ -47,6 +47,6 @@ public class Feijao {
     }
 
     public String aceitar(Visitor visitor) {
-        return visitor.exibirFeijao(this);
+        return visitor.visitarFeijao(this);
     }
 }
