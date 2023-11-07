@@ -28,7 +28,6 @@ public class CulturaVisitor implements Visitor{
     @Override
     public String visitarFolhosas(Folhosas folhosas) {
         String str =
-                "MILHO\n" +
                 "Nome: " + folhosas.getNome() + "\n" +
                 "Data Plantio: " + folhosas.getDataPlantio() + "\n" +
                 "Área Cultivada: " + folhosas.getAreaCultivada() + "\n" +
